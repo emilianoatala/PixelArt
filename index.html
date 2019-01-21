@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+  <meta charset="utf-8">
+  <title>Pixel Art Maker</title>
+  <link rel="icon" type="image/png" href="img/batman.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/html2canvas.js"></script>
+  <script src="js/FileSaver.js"></script>
+  <script src="js/dom-to-json.js"></script>
+  <script src="js/batman.js"></script>
+  <script src="js/flash.js"></script>
+  <script src="js/wonder.js"></script>
+  <script src="js/invisible.js"></script>
+  <script defer src="js/recursos.js"></script>
+  <script defer src="js/pixel-art.js"></script>
+</head>
+  <body>
+    <header>
+      <div id="cabecera">
+        <h1>Pixel Art</h1>
+      </div>
+    </header>
+    <section id="container">
+      <div class="menu-der">
+        <div class="superheroes">
+          <ul class="imgs">
+            <li> <img id="batman" src="img/batman.png" alt="batman"></li>
+            <li> <img id="wonder" src="img/wonder.png" alt="wonder woman"></li>
+            <li> <img id="flash" src="img/flash.png" alt="flash"></li>
+            <li><img id="invisible" src="img/invisible.png" alt="invisible"></li>
+          </ul>
+        </div>
+      </div>
+      <div id="grilla-pixeles" class="cursor-personalizado">
+      </div>
+
+      <nav id="menu-izq">
+        <section>        
+          <div id="paleta">
+          </div>
+          <div id="color-elegido">
+            <ul class="input-color">
+              <li>
+                <span id="indicador-de-color" class="cursor-personalizado"></span>
+              </li>
+              <li>
+                <input id="color-personalizado" class="input-color" type="color" name="name" value="#ffffff">
+              </li>
+            </ul>
+          </div>
+          <div class="botones">
+            <i class="far fa-save" id="guardar"></i>
+            <i class="far fa-trash-alt" id="borrar"></i>
+          </div>
+        </section>
+        <div class="boton-menu">
+          <i class="fas fa-bars" id="iconoMenu"></i>
+        </div>
+        <div id="menu">
+          <input type="checkbox" id="input-lapiz" checked for="lapiz">
+          <input type="checkbox" id="input-bote" for="bote">
+          <input type="checkbox" id="input-cuentagotas" for="cuentagotas">
+          <input type="checkbox" id="input-circulo" for="circulo">
+          <input type="checkbox" id="input-cuadrado" checked="" for="cuadrado">
+          <label id="lapiz" class="fas fa-pencil-alt" ></label>
+          <label id="bote" class="fas fa-fill-drip" ></label>
+          <label id="cuentagotas" class="fas fa-eye-dropper" ></label>
+          <label id="circulo" class="far fa-circle" ></label>
+          <label id="cuadrado" class="far fa-square" ></label>
+        </div>
+      </nav>
+    </section> 
+    <footer> 
+    <p>© Copyright 2018. By Emiliano Atala. Todos los derechos reservados.</p>
+    </footer>  
+  </body>
+</html>
